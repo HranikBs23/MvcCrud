@@ -1,0 +1,38 @@
+﻿@model MvcCrud.Models.AddEmployeeViewModel
+@{
+}
+
+<h1>Add Employee</h1>
+<form method="post" action="Add">
+    <div class="mb-3">
+        <label for="Name" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+        
+    </div>
+    <div class="mb-3">
+        <label for="Email" class="form-label">Email</label>
+        <input type="text" class="form-control" asp-for="Email">
+
+    </div>
+     <div class="mb-3">
+        <label for="Phone" class="form-label">Phone Number</label>
+        <input type="number" class="form-control" asp-for="Phone">
+
+    </div>
+    <div class="mb-3">
+        <label for="Salary" class="form-label">Salary</label>
+        <input type="number" class="form-control" asp-for="Salary">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" asp-for="DateTime">
+
+    </div>
+    <div class="mb-3">
+        <label for="Department" class="form-label">Department</label>
+        <input type="text" class="form-control" asp-for="Department">
+
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
